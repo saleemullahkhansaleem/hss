@@ -199,7 +199,6 @@ export default function Home() {
                 alt="Syed Hanif Shah"
                 width={600}
                 height={600}
-                priority
                 className="relative rounded-2xl object-cover shadow-2xl"
               />
             </div>
@@ -311,7 +310,7 @@ export default function Home() {
               Connect with me to discuss business opportunities or
               collaborations
             </p>
-            <div className="mt-8 flex justify-center gap-4">
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
