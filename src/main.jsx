@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
-import { AboutUs, ContactUs, Portfolio, Home, NotFound } from "./pages";
+import { AboutUs, ContactUs, Portfolio, Home, NotFound, Stats } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <ContactUs />,
+      },
+      {
+        path: "stats",
+        element: <Stats />,
       },
       {
         path: "*",

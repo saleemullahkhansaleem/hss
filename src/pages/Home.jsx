@@ -18,7 +18,7 @@ export default function Home() {
         "Leading provider of enterprise software solutions and digital transformation services",
       category: "Technology",
       website: "https://mhstechventures.com",
-      logo: "./logo.png",
+      logo: "./mhs-logo.png",
     },
     {
       name: "Green Energy Co.",
