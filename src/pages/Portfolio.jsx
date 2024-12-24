@@ -53,7 +53,7 @@ const galleryItems = [
   },
 ];
 
-export default function Gallery() {
+export default function Portfolio() {
   const [currentGallery, setCurrentGallery] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
@@ -100,7 +100,9 @@ export default function Gallery() {
                 className="w-full aspect-square object-cover group-hover:scale-105"
               />
               <CardContent className="p-4">
-                <h3 className="text-sm md:text-base text-center font-semibold">{gallery.title}</h3>
+                <h3 className="text-sm md:text-base text-center font-semibold">
+                  {gallery.title}
+                </h3>
               </CardContent>
             </Card>
           ))}

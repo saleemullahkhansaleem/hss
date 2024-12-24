@@ -4,15 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout.jsx";
 import "@fontsource/poppins";
-import {
-  AboutUs,
-  ContactUs,
-  EdgeMallCeremony,
-  Gallery,
-  Home,
-  NotFound,
-} from "./pages";
-import { ServiceDetail } from "./components";
+import { AboutUs, ContactUs, Portfolio, Home, NotFound } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -28,16 +20,8 @@ const router = createBrowserRouter([
         element: <AboutUs />,
       },
       {
-        path: "edge-mall-ceremony",
-        element: <EdgeMallCeremony />,
-      },
-      {
-        path: "services/:serviceId",
-        element: <ServiceDetail />,
-      },
-      {
-        path: "gallery",
-        element: <Gallery />,
+        path: "portfolio",
+        element: <Portfolio />,
       },
       {
         path: "contact",
