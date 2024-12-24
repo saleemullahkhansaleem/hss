@@ -7,27 +7,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
-import {
-  ArrowUpRight,
-  Building2,
-  ExternalLink,
-  Globe,
-  Mail,
-  Menu,
-  Twitter,
-  X,
-} from "lucide-react";
-import { useState } from "react";
+import { ArrowUpRight, ExternalLink, Globe, Mail, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
   const businesses = [
     {
-      name: "Tech Solutions Inc.",
+      name: "MHS Tech Ventures Pvt. Ltd.",
       description:
         "Leading provider of enterprise software solutions and digital transformation services",
       category: "Technology",
-      website: "https://techsolutions.com",
+      website: "https://mhstechventures.com",
       logo: "./logo.png",
     },
     {
@@ -155,9 +145,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      {/* Navbar */}
-
+    <>
       {/* Hero Section */}
       <section
         id="about"
@@ -178,13 +166,16 @@ export default function Home() {
                 innovative companies spanning technology, energy, and
                 sustainable solutions.
               </p>
-              <div className="mt-8 flex gap-4">
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                  asChild
                 >
-                  Get in Touch
-                  <Mail className="ml-2 size-4" />
+                  <Link to="contact">
+                    Get in Touch
+                    <Mail className="ml-2 size-4" />
+                  </Link>
                 </Button>
                 <Button size="lg" variant="outline">
                   View Portfolio
@@ -195,11 +186,12 @@ export default function Home() {
             <div className="relative lg:mt-0">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-2xl blur-3xl" />
               <img
-                src="https://placehold.co/600"
+                src="./mhs-profile.png"
+                // src="https://placehold.co/600"
                 alt="Syed Hanif Shah"
                 width={600}
                 height={600}
-                className="relative rounded-2xl object-cover shadow-2xl"
+                className="relative rounded-2xl object-cover max-w-md w-full m-auto"
               />
             </div>
           </div>
@@ -207,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section id="stats" className="border-y bg-muted/50">
+      <section id="stats" className="border-y bg-muted/50 px-4">
         <div className="container mx-auto py-12 md:py-16">
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
             {stats.map((stat) => (
@@ -233,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Business Portfolio Section */}
-      <section id="portfolio" className="py-16 md:py-24">
+      <section id="portfolio" className="py-16 md:py-24 px-4">
         <div className="container mx-auto">
           <div className="mx-auto max-w-2xl text-center">
             <Badge variant="outline" className="mb-4">
@@ -253,8 +245,8 @@ export default function Home() {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Card className="group relative overflow-hidden transition-all hover:shadow-lg">
-                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
-                      <CardContent className="p-6">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
+                      <CardContent className="p-6 z-10 relative">
                         <div className="mb-4 flex items-center justify-between">
                           <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent blur-xl" />
@@ -275,7 +267,7 @@ export default function Home() {
                           {business.description}
                         </p>
                         <Link
-                          href={business.website}
+                          to={business.website}
                           className="mt-4 inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -297,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="border-t bg-muted/50">
+      <section id="contact" className="border-t bg-muted/50 p-4">
         <div className="container mx-auto py-16 md:py-24">
           <div className="mx-auto max-w-2xl text-center">
             <Badge variant="outline" className="mb-4">
@@ -330,6 +322,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }

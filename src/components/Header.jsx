@@ -13,19 +13,19 @@ const Header = ({ setDarkMode, darkMode }) => {
     { label: "Contact", href: "#contact" },
   ];
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4">
       <div className="container mx-auto flex h-16 items-center justify-between">
-        <div className="flex items-center gap-2">
+        <Link to="/" className="flex items-center gap-2">
           <Building2 className="size-6" />
           <span className="text-lg font-semibold">Syed Hanif Shah</span>
-        </div>
+        </Link>
         <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="text-sm font-medium transition-colors hover:text-primary"
             >
               {item.label}
@@ -49,7 +49,7 @@ const Header = ({ setDarkMode, darkMode }) => {
             {navItems.map((item) => (
               <Link
                 key={item.label}
-                href={item.href}
+                to={item.href}
                 className="text-sm font-medium transition-colors hover:text-primary"
                 onClick={() => setIsMenuOpen(false)}
               >
