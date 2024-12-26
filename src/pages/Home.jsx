@@ -7,7 +7,15 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight, ExternalLink, Globe, Mail, Twitter } from "lucide-react";
+import {
+  ArrowUpRight,
+  ExternalLink,
+  Globe,
+  Mail,
+  MessageSquare,
+  Phone,
+  Twitter,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -154,6 +162,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:75px_75px]" />
         <div className="relative mx-auto max-w-7xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
+            <div className="relative lg:mt-0 lg:order-2">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-2xl blur-3xl" />
+              <img
+                src="./mhs-profile.png"
+                // src="https://placehold.co/600"
+                alt="Syed Hanif Shah"
+                width={600}
+                height={600}
+                className="relative rounded-2xl object-cover max-w-md w-full m-auto"
+              />
+            </div>
             <div className="flex flex-col justify-center">
               <Badge className="w-fit mb-4" variant="secondary">
                 Visionary Entrepreneur
@@ -174,25 +193,14 @@ export default function Home() {
                 >
                   <Link to="contact">
                     Get in Touch
-                    <Mail className="ml-2 size-4" />
+                    <Mail className="ml-2 size-4" asChild />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline">
-                  View Portfolio
+                  <Link to="portfolio">View Portfolio</Link>
                   <ArrowUpRight className="ml-2 size-4" />
                 </Button>
               </div>
-            </div>
-            <div className="relative lg:mt-0">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-primary/5 rounded-2xl blur-3xl" />
-              <img
-                src="./mhs-profile.png"
-                // src="https://placehold.co/600"
-                alt="Syed Hanif Shah"
-                width={600}
-                height={600}
-                className="relative rounded-2xl object-cover max-w-md w-full m-auto"
-              />
             </div>
           </div>
         </div>
@@ -306,17 +314,24 @@ export default function Home() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                asChild
               >
-                <Mail className="mr-2 size-4" />
-                Email
+                <Link to="mailto:hanif@smhs.com">
+                  <Mail className="mr-2 size-4" />
+                  Email
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                <Twitter className="mr-2 size-4" />
-                Twitter
+              <Button size="lg" variant="secondary" asChild>
+                <Link to="tel:+1234567890">
+                  <Phone className="mr-2 size-4" />
+                  Call Me
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                <Globe className="mr-2 size-4" />
-                Website
+              <Button size="lg" variant="outline" asChild>
+                <Link to="contact">
+                  <MessageSquare className="mr-2 size-4" />
+                  Send Message
+                </Link>
               </Button>
             </div>
           </div>

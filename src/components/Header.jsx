@@ -10,7 +10,7 @@ const Header = ({ setDarkMode, darkMode }) => {
     { label: "About", href: "about" },
     { label: "Portfolio", href: "portfolio" },
     { label: "Stats", href: "stats" },
-    { label: "Contact", href: "contact" },
+    // { label: "Contact", href: "contact" },
   ];
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4">
@@ -31,7 +31,9 @@ const Header = ({ setDarkMode, darkMode }) => {
               {item.label}
             </Link>
           ))}
-          <Button>Contact Me</Button>
+          <Button asChild>
+            <Link to="contact">Contact Me</Link>
+          </Button>
         </nav>
         {/* Mobile Navigation */}
         <button

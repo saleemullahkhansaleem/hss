@@ -97,10 +97,10 @@ export default function Portfolio() {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           {businesses.map((business, index) => (
             <Card
-              key={business.name}
+              key={index}
               className="overflow-hidden group hover:shadow-lg transition-all duration-300"
             >
               <CardContent className="p-6">
@@ -111,8 +111,7 @@ export default function Portfolio() {
                         src={business.logo}
                         alt={business.name}
                         layout="fill"
-                        objectFit="cover"
-                        className="rounded-full"
+                        className="rounded object-cover"
                       />
                     </div>
                     <div>
@@ -153,7 +152,7 @@ export default function Portfolio() {
                   <h3 className="text-lg font-semibold mb-2">
                     Key Achievements
                   </h3>
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
                     {business.keyAchievements.map((achievement, i) => (
                       <div key={i} className="space-y-2 border p-4">
                         <Award className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -186,12 +185,6 @@ export default function Portfolio() {
           </Button>
         </div>
       </section>
-
-      <footer className="bg-background border-t">
-        <div className="container mx-auto px-4 py-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Syed Hanif Shah. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

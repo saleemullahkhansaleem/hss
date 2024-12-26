@@ -5,7 +5,7 @@ import { Building2 } from "lucide-react";
 export default function Footer({ setDarkMode, darkMode }) {
   return (
     <footer className="border-t">
-      <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-16 md:flex-row md:py-0">
         <div className="flex items-center gap-4">
           <Building2 className="size-6" />
           <p className="text-sm leading-loose text-muted-foreground md:text-base">
@@ -13,7 +13,6 @@ export default function Footer({ setDarkMode, darkMode }) {
           </p>
         </div>
         <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
-        <BackToTopButton />
         <nav className="flex gap-4">
           <Link
             href="#"
@@ -29,6 +28,7 @@ export default function Footer({ setDarkMode, darkMode }) {
           </Link>
         </nav>
       </div>
+      <BackToTopButton />
     </footer>
   );
 }
