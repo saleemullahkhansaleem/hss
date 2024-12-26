@@ -151,12 +151,6 @@ export default function ContactUs() {
           </Badge>
         </div>
       </section>
-
-      <footer className="bg-background border-t">
-        <div className="container mx-auto py-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Syed Hanif Shah. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -193,12 +193,13 @@ export default function Home() {
                 >
                   <Link to="contact">
                     Get in Touch
-                    <Mail className="ml-2 size-4" asChild />
+                    <Mail className="ml-2 size-4" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline">
-                  <Link to="portfolio">View Portfolio</Link>
-                  <ArrowUpRight className="ml-2 size-4" />
+                <Button size="lg" variant="outline" asChild>
+                  <Link to="portfolio">
+                    View Portfolio <ArrowUpRight className="ml-2 size-4" />
+                  </Link>
                 </Button>
               </div>
             </div>
