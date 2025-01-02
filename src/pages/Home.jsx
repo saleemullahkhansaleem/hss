@@ -165,10 +165,10 @@ export default function Home() {
             {/* <Badge className="w-fit mb-4" variant="secondary">
               Visionary Entrepreneur
             </Badge> */}
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-primary">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-primary">
               Hanif Shah Secretariat
             </h1>
-            <p className="mt-4 text-xl text-muted-foreground text-center">
+            <p className="mt-4 md:text-xl text-muted-foreground text-center">
               Serial entrepreneur and business leader with a portfolio of
               innovative companies spanning technology, energy, and sustainable
               solutions.
@@ -244,7 +244,7 @@ export default function Home() {
               <TooltipProvider key={business.name}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="animated-border rounded-xl">
+                    <div className="animated-borde rounded-xl">
                       <Card className="group relative overflow-hidden transition-all hover:shadow-lg h-full">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
                         <CardContent className="p-6 z-10 relative">

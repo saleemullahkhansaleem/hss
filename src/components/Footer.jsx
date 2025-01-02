@@ -12,7 +12,7 @@ export default function Footer({ setDarkMode, darkMode }) {
             © 2024 Syed Hanif Shah. All rights reserved.
           </p>
         </div>
-        <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
+        {/* <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} /> */}
         <nav className="flex gap-4">
           <Link
             href="#"
