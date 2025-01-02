@@ -165,7 +165,7 @@ export default function Home() {
             {/* <Badge className="w-fit mb-4" variant="secondary">
               Visionary Entrepreneur
             </Badge> */}
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-primary">
               Hanif Shah Secretariat
             </h1>
             <p className="mt-4 text-xl text-muted-foreground text-center">
@@ -227,7 +227,7 @@ export default function Home() {
             {/* <Badge variant="outline" className="mb-4">
               Our Companies
             </Badge> */}
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary">
               Business Initiative Group
             </h2>
             <p className="mt-4 text-muted-foreground">
@@ -295,7 +295,7 @@ export default function Home() {
             {/* <Badge variant="outline" className="mb-4">
               Contact
             </Badge> */}
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
               Get in Touch
             </h2>
             <p className="mt-4 text-muted-foreground">
