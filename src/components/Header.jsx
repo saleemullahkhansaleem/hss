@@ -17,11 +17,11 @@ const Header = ({ setDarkMode, darkMode }) => {
       <div className="container mx-auto flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <Building2 className="size-6 text-primary" />
-          <span className="text-lg font-semibold">Syed Hanif Shah</span>
+          <span className="text-2xl font-semibold">HSS</span>
         </Link>
         <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        {/* <nav className="hidden md:flex items-center gap-6">
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -32,20 +32,20 @@ const Header = ({ setDarkMode, darkMode }) => {
             </Link>
           ))}
           <Button asChild>
-            <Link to="contact">Contact Me</Link>
+            <Link to="#contact">Contact Us</Link>
           </Button>
-        </nav>
+        </nav> */}
         {/* Mobile Navigation */}
-        <button
+        {/* <button
           className="md:hidden"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
-        </button>
+        </button> */}
       </div>
       {/* Mobile Menu */}
-      {isMenuOpen && (
+      {/* {isMenuOpen && (
         <div className="container mx-auto md:hidden">
           <nav className="flex flex-col space-y-4 pb-4">
             {navItems.map((item) => (
@@ -61,7 +61,7 @@ const Header = ({ setDarkMode, darkMode }) => {
             <Button className="w-full">Contact Me</Button>
           </nav>
         </div>
-      )}
+      )} */}
     </header>
   );
 };
