@@ -156,8 +156,8 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <section
-        id="about"
-        className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-24 md:py-32 bg-primary/5"
+        id="home"
+        className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-24 md:py-32 bg-muted"
       >
         <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:75px_75px]" />
         <div className="relative mx-auto max-w-3xl">
@@ -177,13 +177,17 @@ export default function Home() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
-                asChild
+                onClick={() => {
+                  const contactSection = document.getElementById("contact");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
-                <Link to="#contact">
-                  Get in Touch
-                  <Mail className="ml-2 size-4" />
-                </Link>
+                Get in Touch
+                <Mail className="ml-2 size-4" />
               </Button>
+
               {/* <Button size="lg" variant="outline" asChild>
                 <Link to="portfolio">
                   View Portfolio <ArrowUpRight className="ml-2 size-4" />
@@ -221,7 +225,7 @@ export default function Home() {
       </section> */}
 
       {/* Business Portfolio Section */}
-      <section id="portfolio" className="py-16 md:py-24 px-4">
+      <section id="business" className="py-16 md:py-24 px-4">
         <div className="container mx-auto">
           <div className="mx-auto max-w-2xl text-center">
             {/* <Badge variant="outline" className="mb-4">
