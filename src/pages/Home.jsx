@@ -179,7 +179,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
                 asChild
               >
-                <Link to="contact">
+                <Link to="#contact">
                   Get in Touch
                   <Mail className="ml-2 size-4" />
                 </Link>
