@@ -18,7 +18,7 @@ const Header = ({ setDarkMode, darkMode }) => {
         <Link to="/" className="flex items-center gap-2">
           {/* <Building2 className="size-8 text-primary" /> */}
           <img src="./logo.svg" alt="logo" className="w-20 object-cover fill-primary text-primary" />
-          <span className="text-3xl font-semibold">HSS</span>
+          {/* <span className="text-3xl font-semibold">HSS</span> */}
         </Link>
         <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
         {/* Desktop Navigation */}

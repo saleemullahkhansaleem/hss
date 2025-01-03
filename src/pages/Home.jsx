@@ -29,112 +29,65 @@ export default function Home() {
       logo: "./mhs-logo.png",
     },
     {
-      name: "Green Energy Co.",
+      name: "Caput International.",
       description:
-        "Renewable energy solutions for a sustainable future, specializing in solar and wind power",
-      category: "Energy",
-      website: "https://greenenergy.com",
-      logo: "https://placehold.co/80",
+        "Multi Services company offering renewable energy solutions for a sustainable future, specializing in solar and wind power.",
+      category: "Multi Services",
+      website: "https://caputinternational.com.pk/",
+      logo: "./ci-logo.png",
     },
     {
-      name: "Future Mobility",
+      name: "Stead Fast Security",
       description:
-        "Electric vehicle technology and infrastructure development for smart cities",
-      category: "Automotive",
-      website: "https://futuremobility.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "HealthTech Innovations",
-      description:
-        "Revolutionary healthcare technology solutions and telemedicine platforms",
-      category: "Healthcare",
-      website: "https://healthtechinno.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "Smart Homes Ltd",
-      description:
-        "Intelligent home automation and IoT solutions for modern living",
-      category: "Real Estate",
-      website: "https://smarthomesltd.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "EduTech Global",
-      description:
-        "Online learning platforms and educational technology solutions",
-      category: "Education",
-      website: "https://edutechglobal.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "Fintech Solutions",
-      description:
-        "Digital banking and innovative financial technology services",
-      category: "Finance",
-      website: "https://fintechsolutions.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "AgriTech Ventures",
-      description:
-        "Smart farming solutions and agricultural technology innovations",
-      category: "Agriculture",
-      website: "https://agritechventures.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "Cyber Security Pro",
-      description:
-        "Advanced cybersecurity solutions and threat protection services",
+        "Providing cutting-edge security solutions and services to ensure safety and protection for businesses and individuals.",
       category: "Security",
-      website: "https://cybersecpro.com",
-      logo: "https://placehold.co/80",
+      website: "https://steadfastsecurity.com.pk/",
+      logo: "./sf-logo.png",
     },
+
     {
-      name: "Digital Media Group",
-      description: "Content creation and digital marketing solutions",
-      category: "Media",
-      website: "https://digitalmediagroup.com",
-      logo: "https://placehold.co/80",
-    },
-    {
-      name: "AI Research Labs",
+      name: "Global Links Technologies",
       description:
-        "Artificial intelligence and machine learning research & development",
-      category: "AI & ML",
-      website: "https://airesearchlabs.com",
-      logo: "https://placehold.co/80",
+        "Innovative technology solutions empowering businesses with advanced software, IT services, and digital transformation tools.",
+      category: "Technology",
+      website: "https://globallinkstechnologies.com/",
+      logo: "./glt-logo.png",
     },
+
     {
-      name: "Blockchain Solutions",
+      name: "WinSource International",
       description:
-        "Enterprise blockchain solutions and cryptocurrency infrastructure",
-      category: "Blockchain",
-      website: "https://blockchainsolutions.com",
-      logo: "https://placehold.co/80",
+        "Pioneering mining solutions focused on sustainable resource extraction and mineral processing technologies.",
+      category: "Mining",
+      website: "https://winsourceinternational.com.pk/",
+      logo: "./wsi-logo.svg",
     },
+
     {
-      name: "Space Technologies",
-      description: "Space exploration and satellite communication technologies",
-      category: "Space",
-      website: "https://spacetechnologies.com",
-      logo: "https://placehold.co/80",
+      name: "Deed",
+      description:
+        "A nonprofit organization dedicated to community development, education, and empowerment initiatives for a better future.",
+      category: "NGO",
+      website: "https://deed.com.pk/",
+      logo: "./deed-logo.png",
     },
+
     {
-      name: "Bio Research Co",
-      description: "Biotechnology research and pharmaceutical development",
-      category: "Biotech",
-      website: "https://bioresearchco.com",
-      logo: "https://placehold.co/80",
+      name: "FSCF Technologies",
+      description:
+        "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
+      category: "Technology",
+      website: "https://fscftechnologies.com/",
+      logo: "./fscf-logo.png",
     },
+
     {
-      name: "Clean Ocean Initiative",
-      description: "Ocean cleanup technology and marine conservation solutions",
+      name: "Go For Green Revolution",
+      description:
+        "Sustainable environmental solutions focused on renewable energy, eco-friendly technologies, and promoting a greener future.",
       category: "Environment",
-      website: "https://cleanocean.com",
-      logo: "https://placehold.co/80",
+      website: "https://goforgreenrevolution.com.pk/",
+      logo: "./ggr-logo.png",
     },
   ];
 
@@ -254,9 +207,8 @@ export default function Home() {
                               <img
                                 src={business.logo}
                                 alt={business.name}
-                                width={80}
                                 height={80}
-                                className="relative rounded-lg"
+                                className="relative max-h-20 max-w-48 object-cover rounded-lg"
                               />
                             </div>
                             <Badge variant="secondary">
