@@ -166,7 +166,7 @@ export default function Home() {
               Visionary Entrepreneur
             </Badge> */}
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-primary">
-              Hanif Shah Secretariat
+              HS Secretariat
             </h1>
             <p className="mt-4 md:text-xl text-muted-foreground text-center">
               Serial entrepreneur and business leader with a portfolio of

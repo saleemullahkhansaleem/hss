@@ -14,9 +14,10 @@ const Header = ({ setDarkMode, darkMode }) => {
   ];
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 px-4">
-      <div className="container mx-auto flex h-16 items-center justify-between">
+      <div className="container mx-auto flex h-24 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <Building2 className="size-8 text-primary" />
+          {/* <Building2 className="size-8 text-primary" /> */}
+          <img src="./logo.svg" alt="logo" className="w-20 object-cover fill-primary text-primary" />
           <span className="text-3xl font-semibold">HSS</span>
         </Link>
         <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
