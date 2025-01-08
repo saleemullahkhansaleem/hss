@@ -1,6 +1,6 @@
-# Syed Hanif Shah
+# HS Secretariat
 
-Syed Hanif Shah is a service-oriented company committed to providing customized solutions in various fields, including Event Management, Vendor Services, Branding & Advertising, Facility Management, Construction, and Property Advisory Services. This website showcases CAPUT's mission, services, and dedication to quality and long-term client relationships.
+HS Secretariat is a service-oriented company committed to providing customized solutions in various fields, including Event Management, Vendor Services, Branding & Advertising, Facility Management, Construction, and Property Advisory Services. This website showcases CAPUT's mission, services, and dedication to quality and long-term client relationships.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ Syed Hanif Shah is a service-oriented company committed to providing customized 
 
 ## About
 
-Syed Hanif Shah is focused on providing unmatched assistance to clients through quality service, strategic partnerships, and customized solutions. This project represents CAPUT's digital presence, outlining their history, values, and services offered.
+HS Secretariat is focused on providing unmatched assistance to clients through quality service, strategic partnerships, and customized solutions. This project represents CAPUT's digital presence, outlining their history, values, and services offered.
 
 ### Website URL
 

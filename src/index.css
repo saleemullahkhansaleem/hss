@@ -192,6 +192,12 @@
   background-size: 1.25rem 1.25rem;
 }
 
+.grid-bg {
+  background-size: 4px 4px;
+  background-image: linear-gradient(to right, hsl(var(--primary)) 1px, transparent 1px),
+    linear-gradient(to bottom, hsl(var(--primary)) 1px, transparent 1px);
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0);

@@ -46,10 +46,10 @@ export default function ContactUs() {
                   <div>
                     <p className="font-semibold">Email</p>
                     <a
-                      href="mailto:syed@example.com"
+                      href="mailto:hss@example.com"
                       className="text-muted-foreground hover:text-primary"
                     >
-                      syed@example.com
+                      hss@example.com
                     </a>
                   </div>
                 </CardContent>

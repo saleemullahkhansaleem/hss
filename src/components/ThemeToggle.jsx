@@ -5,12 +5,7 @@ export default function ThemeToggle({ setDarkMode, darkMode }) {
   const toggleDarkMode = () => setDarkMode((prev) => !prev);
 
   return (
-    <Button
-      variant="ghost"
-      size="icon"
-      onClick={toggleDarkMode}
-      className="ml-auto mr-4"
-    >
+    <Button variant="ghost" size="icon" onClick={toggleDarkMode} className="">
       {darkMode ? (
         <Sun className="h-[1.2rem] w-[1.2rem]" />
       ) : (

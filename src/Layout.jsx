@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import { Footer, Header, ScrollToTop } from "./components";
+import { Footer, Header, ScrollToTop, ThemeToggle } from "./components";
 import { useEffect, useState } from "react";
 
 export default function Layout() {
@@ -15,8 +15,11 @@ export default function Layout() {
 
   return (
     <main className={`bg-background text-foreground ${darkMode ? "dark" : ""}`}>
+      <div className="fixed top-2 right-2 z-50">
+        <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} />
+      </div>
       <ScrollToTop />
-      <Header setDarkMode={setDarkMode} darkMode={darkMode} />
+      {/* <Header /> */}
       <Outlet />
       <Footer setDarkMode={setDarkMode} darkMode={darkMode} />
     </main>

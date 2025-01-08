@@ -42,7 +42,7 @@ export default function AboutUs() {
             Back to Home
           </Link>
           <h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-            About Syed Hanif Shah
+            About HS Secretariat
           </h1>
           <p className="mt-4 max-w-3xl text-xl text-muted-foreground">
             Visionary entrepreneur, innovator, and philanthropist shaping the
@@ -56,7 +56,7 @@ export default function AboutUs() {
           <div>
             <img
               src="https://placehold.co/600"
-              alt="Syed Hanif Shah"
+              alt="HS Secretariat"
               width={600}
               height={600}
               className="rounded-lg shadow-lg"

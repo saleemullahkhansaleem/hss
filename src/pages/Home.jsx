@@ -17,24 +17,57 @@ import {
   Twitter,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { ThemeToggle } from "@/components";
 
 export default function Home() {
   const businesses = [
     {
-      name: "MHS Tech Ventures Pvt. Ltd.",
-      description:
-        "Leading provider of enterprise software solutions and digital transformation services",
-      category: "Technology",
-      website: "https://mhstechventures.com",
-      logo: "./mhs-logo.png",
-    },
-    {
-      name: "Caput International.",
+      name: "Caput International",
       description:
         "Multi Services company offering renewable energy solutions for a sustainable future, specializing in solar and wind power.",
       category: "Multi Services",
       website: "https://caputinternational.com.pk/",
       logo: "./ci-logo.png",
+    },
+    {
+      name: "Deed",
+      description:
+        "A nonprofit organization dedicated to community development, education, and empowerment initiatives for a better future.",
+      category: "NGO",
+      website: "https://deed.com.pk/",
+      logo: "./deed-logo.png",
+    },
+    {
+      name: "Global Links Technologies",
+      description:
+        "Innovative technology solutions empowering businesses with advanced software, IT services, and digital transformation tools.",
+      category: "Technology",
+      website: "https://globallinkstechnologies.com/",
+      logo: "./glt-logo.png",
+    },
+    {
+      name: "Go For Green Revolution",
+      description:
+        "Sustainable environmental solutions focused on renewable energy, eco-friendly technologies, and promoting a greener future.",
+      category: "Environment",
+      website: "https://goforgreenrevolution.com.pk/",
+      logo: "./ggr-logo.png",
+    },
+    {
+      name: "FSCF Technologies",
+      description:
+        "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
+      category: "Technology",
+      website: "https://fscftechnologies.com/",
+      logo: "./fscf-logo.png",
+    },
+    {
+      name: "MHS Tech Ventures",
+      description:
+        "Leading provider of enterprise software solutions and digital transformation services",
+      category: "Technology",
+      website: "https://mhstechventures.com",
+      logo: "./mhs-logo.png",
     },
     {
       name: "Stead Fast Security",
@@ -44,50 +77,13 @@ export default function Home() {
       website: "https://steadfastsecurity.com.pk/",
       logo: "./sf-logo.png",
     },
-
     {
-      name: "Global Links Technologies",
-      description:
-        "Innovative technology solutions empowering businesses with advanced software, IT services, and digital transformation tools.",
-      category: "Technology",
-      website: "https://globallinkstechnologies.com/",
-      logo: "./glt-logo.png",
-    },
-
-    {
-      name: "WinSource International",
+      name: "Win Source International",
       description:
         "Pioneering mining solutions focused on sustainable resource extraction and mineral processing technologies.",
       category: "Mining",
       website: "https://winsourceinternational.com.pk/",
       logo: "./wsi-logo.svg",
-    },
-
-    {
-      name: "Deed",
-      description:
-        "A nonprofit organization dedicated to community development, education, and empowerment initiatives for a better future.",
-      category: "NGO",
-      website: "https://deed.com.pk/",
-      logo: "./deed-logo.png",
-    },
-
-    {
-      name: "FSCF Technologies",
-      description:
-        "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
-      category: "Technology",
-      website: "https://fscftechnologies.com/",
-      logo: "./fscf-logo.png",
-    },
-
-    {
-      name: "Go For Green Revolution",
-      description:
-        "Sustainable environmental solutions focused on renewable energy, eco-friendly technologies, and promoting a greener future.",
-      category: "Environment",
-      website: "https://goforgreenrevolution.com.pk/",
-      logo: "./ggr-logo.png",
     },
   ];
 
@@ -110,14 +106,20 @@ export default function Home() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-24 md:py-32 bg-muted"
+        className="relative overflow-hidden p-4 bg-muted min-h-screen flex items-center justify-center"
       >
-        <div className="absolute inset-0 bg-grid-slate-100/[0.03] bg-[size:75px_75px]" />
+        <div className="absolute inset-0 grid-bg opacity-40 dark:opacity-20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
+        {/* <div className="absolute inset-0 dotted-bg" /> */}
         <div className="relative mx-auto max-w-3xl">
           <div className="flex flex-col justify-center items-center">
-            {/* <Badge className="w-fit mb-4" variant="secondary">
-              Visionary Entrepreneur
-            </Badge> */}
+            <Link to="/" className="flex items-center gap-2">
+              <img
+                src="./logo.svg"
+                alt="logo"
+                className="w-28 mb-4 object-cover fill-primary text-primary"
+              />
+            </Link>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-primary">
               HS Secretariat
             </h1>
@@ -129,7 +131,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
+                className=""
                 onClick={() => {
                   const contactSection = document.getElementById("contact");
                   if (contactSection) {
@@ -140,42 +142,10 @@ export default function Home() {
                 Get in Touch
                 <Mail className="ml-2 size-4" />
               </Button>
-
-              {/* <Button size="lg" variant="outline" asChild>
-                <Link to="portfolio">
-                  View Portfolio <ArrowUpRight className="ml-2 size-4" />
-                </Link>
-              </Button> */}
             </div>
           </div>
         </div>
       </section>
-
-      {/* Stats Section */}
-      {/* <section id="stats" className="border-y bg-muted/50 px-4">
-        <div className="container mx-auto py-12 md:py-16">
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-8">
-            {stats.map((stat) => (
-              <Card
-                key={stat.label}
-                className="overflow-hidden border-0 bg-transparent"
-              >
-                <CardContent className="relative p-4">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/0" />
-                  <div className="relative">
-                    <div className="text-3xl font-bold md:text-4xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                      {stat.value}
-                    </div>
-                    <div className="text-sm text-muted-foreground md:text-base">
-                      {stat.label}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Business Portfolio Section */}
       <section id="business" className="py-16 md:py-24 px-4">
@@ -200,21 +170,24 @@ export default function Home() {
                     <div className="animated-borde rounded-xl">
                       <Card className="group relative overflow-hidden transition-all hover:shadow-lg h-full">
                         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
-                        <CardContent className="p-6 z-10 relative">
-                          <div className="mb-4 flex items-center justify-between">
-                            <div className="relative">
-                              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent blur-xl" />
-                              <img
-                                src={business.logo}
-                                alt={business.name}
-                                height={80}
-                                className="relative max-h-20 max-w-48 object-cover rounded-lg"
-                              />
-                            </div>
-                            <Badge variant="secondary">
-                              {business.category}
-                            </Badge>
+                        <CardContent className="p-6 z-10 relative space-y-4 text-center">
+                          {/* <div className="mb-4 flex items-center justify-between"> */}
+                          <Badge
+                            variant="secondary"
+                            className="absolute top-4 left-4"
+                          >
+                            {business.category}
+                          </Badge>
+                          <div className="relative max-w-max mx-auto">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent blur-xl" />
+                            <img
+                              src={business.logo}
+                              alt={business.name}
+                              height={80}
+                              className="relative max-h-20 max-w-48 object-cover rounded-lg"
+                            />
                           </div>
+                          {/* </div> */}
                           <h3 className="text-xl font-semibold">
                             {business.name}
                           </h3>
@@ -264,7 +237,7 @@ export default function Home() {
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
                 asChild
               >
-                <Link to="mailto:hanif@smhs.com">
+                <Link to="mailto:hss@hss.com">
                   <Mail className="mr-2 size-4" />
                   Email
                 </Link>
