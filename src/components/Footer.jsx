@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import { BackToTopButton, ThemeToggle } from ".";
-import { Building2 } from "lucide-react";
+import { BackToTopButton } from ".";
 
-export default function Footer({ setDarkMode, darkMode }) {
+export default function Footer() {
   return (
     <footer className="border-t px-4">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-16 md:flex-row md:py-0">
@@ -18,7 +17,6 @@ export default function Footer({ setDarkMode, darkMode }) {
             © 2024 HS Secretariat. All rights reserved.
           </p>
         </div>
-        {/* <ThemeToggle setDarkMode={setDarkMode} darkMode={darkMode} /> */}
         <nav className="flex gap-4">
           <Link
             href="#"

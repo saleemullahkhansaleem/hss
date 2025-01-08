@@ -7,17 +7,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Badge } from "@/components/ui/badge";
-import {
-  ArrowUpRight,
-  ExternalLink,
-  Globe,
-  Mail,
-  MessageSquare,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Building2, ExternalLink, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import { ThemeToggle } from "@/components";
 
 export default function Home() {
   const businesses = [
@@ -87,30 +78,14 @@ export default function Home() {
     },
   ];
 
-  const stats = [
-    { label: "Years Experience", value: "25+" },
-    { label: "Companies Founded", value: "15+" },
-    { label: "Team Members", value: "500+" },
-    { label: "Countries", value: "20+" },
-  ];
-
-  const navItems = [
-    { label: "About", href: "#about" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Stats", href: "#stats" },
-    { label: "Contact", href: "#contact" },
-  ];
-
   return (
     <>
-      {/* Hero Section */}
       <section
         id="home"
         className="relative overflow-hidden p-4 bg-muted min-h-screen flex items-center justify-center"
       >
         <div className="absolute inset-0 grid-bg opacity-40 dark:opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-        {/* <div className="absolute inset-0 dotted-bg" /> */}
         <div className="relative mx-auto max-w-3xl">
           <div className="flex flex-col justify-center items-center">
             <Link to="/" className="flex items-center gap-2">
@@ -120,7 +95,7 @@ export default function Home() {
                 className="w-28 mb-4 object-cover fill-primary text-primary"
               />
             </Link>
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-primary">
+            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-foreground">
               HS Secretariat
             </h1>
             <p className="mt-4 md:text-xl text-muted-foreground text-center">
@@ -142,18 +117,27 @@ export default function Home() {
                 Get in Touch
                 <Mail className="ml-2 size-4" />
               </Button>
+              <Button
+                size="lg"
+                variant="secondary"
+                onClick={() => {
+                  const contactSection = document.getElementById("business");
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Business Portfolio
+                <Building2 className="ml-2 size-4" />
+              </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Business Portfolio Section */}
       <section id="business" className="py-16 md:py-24 px-4">
         <div className="container mx-auto">
           <div className="mx-auto max-w-2xl text-center">
-            {/* <Badge variant="outline" className="mb-4">
-              Our Companies
-            </Badge> */}
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl text-primary">
               Business Initiative Group
             </h2>
@@ -170,7 +154,6 @@ export default function Home() {
                     <Card className="group relative overflow-hidden transition-all hover:shadow-lg h-full">
                       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
                       <CardContent className="p-6 z-10 relative space-y-4 text-center">
-                        {/* <div className="mb-4 flex items-center justify-between"> */}
                         <Badge
                           variant="secondary"
                           className="absolute top-4 left-4"
@@ -186,7 +169,6 @@ export default function Home() {
                             className="relative max-h-20 max-w-48 object-cover rounded-lg"
                           />
                         </div>
-                        {/* </div> */}
                         <h3 className="text-xl font-semibold">
                           {business.name}
                         </h3>
@@ -215,13 +197,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="border-t bg-muted/50 p-4">
-        <div className="container mx-auto py-16 md:py-24">
+      <section id="contact" className="borde bg-muted/50 relative p-4">
+        <div className="absolute inset-0 grid-bg opacity-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
+        <div className="container mx-auto py-16 md:py-24 relative">
           <div className="mx-auto max-w-2xl text-center">
-            {/* <Badge variant="outline" className="mb-4">
-              Contact
-            </Badge> */}
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
               Get in Touch
             </h2>
