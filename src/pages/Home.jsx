@@ -162,50 +162,48 @@ export default function Home() {
               multiple industries
             </p>
           </div>
-          <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {businesses.map((business) => (
               <TooltipProvider key={business.name}>
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <div className="animated-borde rounded-xl">
-                      <Card className="group relative overflow-hidden transition-all hover:shadow-lg h-full">
-                        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
-                        <CardContent className="p-6 z-10 relative space-y-4 text-center">
-                          {/* <div className="mb-4 flex items-center justify-between"> */}
-                          <Badge
-                            variant="secondary"
-                            className="absolute top-4 left-4"
-                          >
-                            {business.category}
-                          </Badge>
-                          <div className="relative max-w-max mx-auto">
-                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent blur-xl" />
-                            <img
-                              src={business.logo}
-                              alt={business.name}
-                              height={80}
-                              className="relative max-h-20 max-w-48 object-cover rounded-lg"
-                            />
-                          </div>
-                          {/* </div> */}
-                          <h3 className="text-xl font-semibold">
-                            {business.name}
-                          </h3>
-                          <p className="mt-2 text-sm text-muted-foreground">
-                            {business.description}
-                          </p>
-                          <Link
-                            to={business.website}
-                            className="mt-4 inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Visit Website
-                            <ExternalLink className="ml-1 size-4" />
-                          </Link>
-                        </CardContent>
-                      </Card>
-                    </div>
+                    <Card className="group relative overflow-hidden transition-all hover:shadow-lg h-full">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 z-0" />
+                      <CardContent className="p-6 z-10 relative space-y-4 text-center">
+                        {/* <div className="mb-4 flex items-center justify-between"> */}
+                        <Badge
+                          variant="secondary"
+                          className="absolute top-4 left-4"
+                        >
+                          {business.category}
+                        </Badge>
+                        <div className="relative max-w-max mx-auto">
+                          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent blur-xl" />
+                          <img
+                            src={business.logo}
+                            alt={business.name}
+                            height={80}
+                            className="relative max-h-20 max-w-48 object-cover rounded-lg"
+                          />
+                        </div>
+                        {/* </div> */}
+                        <h3 className="text-xl font-semibold">
+                          {business.name}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">
+                          {business.description}
+                        </p>
+                        <Link
+                          to={business.website}
+                          className="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Visit Website
+                          <ExternalLink className="ml-1 size-4" />
+                        </Link>
+                      </CardContent>
+                    </Card>
                   </TooltipTrigger>
                   <TooltipContent>
                     <p>Click to visit {business.name}</p>
