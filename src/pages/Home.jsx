@@ -197,7 +197,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="borde bg-muted/50 relative p-4">
+      <section id="contact" className="bg-muted/50 relative p-4">
         <div className="absolute inset-0 grid-bg opacity-10"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background"></div>
         <div className="container mx-auto py-16 md:py-24 relative">
