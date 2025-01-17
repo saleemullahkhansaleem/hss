@@ -29,6 +29,14 @@ export default function Home() {
       logo: "./deed-logo.png",
     },
     {
+      name: "FSCF Technologies",
+      description:
+        "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
+      category: "Technology",
+      website: "https://fscftechnologies.com/",
+      logo: "./fscf-logo.png",
+    },
+    {
       name: "Global Links Technologies",
       description:
         "Innovative technology solutions empowering businesses with advanced software, IT services, and digital transformation tools.",
@@ -43,14 +51,6 @@ export default function Home() {
       category: "Environment",
       website: "https://goforgreenrevolution.com.pk/",
       logo: "./ggr-logo.png",
-    },
-    {
-      name: "FSCF Technologies",
-      description:
-        "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
-      category: "Technology",
-      website: "https://fscftechnologies.com/",
-      logo: "./fscf-logo.png",
     },
     {
       name: "MHS Tech Ventures",
