@@ -92,7 +92,7 @@ export default function Home() {
               <img
                 src="./logo.svg"
                 alt="logo"
-                className="w-28 mb-4 object-cover fill-primary text-primary"
+                className="w-56 mb-4 object-cover fill-primary text-primary"
               />
             </Link>
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-6xl lg:text-7xl text-foreground">
