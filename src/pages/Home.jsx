@@ -18,7 +18,7 @@ export default function Home() {
         "Multi Services company offering renewable energy solutions for a sustainable future, specializing in solar and wind power.",
       category: "Multi Services",
       website: "https://caputinternational.com.pk/",
-      logo: "./ci-logo.png",
+      logo: "/images/ci-logo.png",
     },
     {
       name: "Deed",
@@ -26,7 +26,7 @@ export default function Home() {
         "A nonprofit organization dedicated to community development, education, and empowerment initiatives for a better future.",
       category: "NGO",
       website: "https://deed.com.pk/",
-      logo: "./deed-logo.png",
+      logo: "/images/deed-logo.png",
     },
     {
       name: "FSCF Technologies",
@@ -34,7 +34,7 @@ export default function Home() {
         "Pioneering technology solutions focused on IoT, automation, and smart systems to transform modern living and business operations.",
       category: "Technology",
       website: "https://fscftechnologies.com/",
-      logo: "./fscf-logo.png",
+      logo: "/images/fscf-logo.png",
     },
     {
       name: "Global Links Technologies",
@@ -42,7 +42,7 @@ export default function Home() {
         "Innovative technology solutions empowering businesses with advanced software, IT services, and digital transformation tools.",
       category: "Technology",
       website: "https://globallinkstechnologies.com/",
-      logo: "./glt-logo.png",
+      logo: "/images/glt-logo.png",
     },
     {
       name: "Go For Green Revolution",
@@ -50,7 +50,7 @@ export default function Home() {
         "Sustainable environmental solutions focused on renewable energy, eco-friendly technologies, and promoting a greener future.",
       category: "Environment",
       website: "https://goforgreenrevolution.com.pk/",
-      logo: "./ggr-logo.png",
+      logo: "/images/ggr-logo.png",
     },
     {
       name: "MHS Tech Ventures",
@@ -58,7 +58,7 @@ export default function Home() {
         "Leading provider of enterprise software solutions and digital transformation services",
       category: "Technology",
       website: "https://mhstechventures.com",
-      logo: "./mhs-logo.png",
+      logo: "/images/mhs-logo.png",
     },
     {
       name: "Stead Fast Security",
@@ -66,7 +66,7 @@ export default function Home() {
         "Providing cutting-edge security solutions and services to ensure safety and protection for businesses and individuals.",
       category: "Security",
       website: "https://steadfastsecurity.com.pk/",
-      logo: "./sf-logo.png",
+      logo: "/images/sf-logo.png",
     },
     // {
     //   name: "Win Source International",
@@ -74,7 +74,7 @@ export default function Home() {
     //     "Pioneering mining solutions focused on sustainable resource extraction and mineral processing technologies.",
     //   category: "Mining",
     //   website: "https://winsourceinternational.com.pk/",
-    //   logo: "./wsi-logo.svg",
+    //   logo: "/images/wsi-logo.svg",
     // },
   ];
 
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="flex flex-col justify-center items-center">
             <Link to="/" className="flex items-center gap-2">
               <img
-                src="./logo.svg"
+                src="/images/logo.svg"
                 alt="logo"
                 className="w-56 mb-4 object-cover fill-primary text-primary"
               />

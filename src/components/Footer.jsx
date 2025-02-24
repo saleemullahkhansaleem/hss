@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center gap-2">
             <img
-              src="./logo.svg"
+              src="/images/logo.svg"
               alt="logo"
               className="w-8 object-cover fill-primary text-primary"
             />
