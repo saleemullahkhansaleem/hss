@@ -68,14 +68,14 @@ export default function Home() {
       website: "https://steadfastsecurity.com.pk/",
       logo: "./sf-logo.png",
     },
-    {
-      name: "Win Source International",
-      description:
-        "Pioneering mining solutions focused on sustainable resource extraction and mineral processing technologies.",
-      category: "Mining",
-      website: "https://winsourceinternational.com.pk/",
-      logo: "./wsi-logo.svg",
-    },
+    // {
+    //   name: "Win Source International",
+    //   description:
+    //     "Pioneering mining solutions focused on sustainable resource extraction and mineral processing technologies.",
+    //   category: "Mining",
+    //   website: "https://winsourceinternational.com.pk/",
+    //   logo: "./wsi-logo.svg",
+    // },
   ];
 
   return (
