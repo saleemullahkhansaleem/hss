@@ -146,7 +146,7 @@ export default function Home() {
               multiple industries
             </p>
           </div>
-          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {businesses.map((business) => (
               <TooltipProvider key={business.name}>
                 <Tooltip>
