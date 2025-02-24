@@ -19,13 +19,13 @@ export default function MrCard({
   return (
     <HoverCard>
       <HoverCardTrigger asChild>
-        <p>
+        <p className="text-sm">
           Develop by{" "}
           <a
             href={portfolioUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block hover:text-primary transition-colors duration-200"
+            className="inline-block hover:text-primary transition-colors duration-200 hover:underline underline-offset-4"
           >
             {name}
           </a>
