@@ -9,6 +9,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Building2, ExternalLink, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const businesses = [
@@ -80,6 +81,17 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <title>HS Secretariat - Business Initiative Group</title>
+        <meta
+          name="description"
+          content="A diverse collection of innovative companies driving change across multiple industries"
+        />
+        <meta
+          name="keywords"
+          content="business, initiative, group, companies, technology, energy, sustainable, solutions, entrepreneur, leader, technology, energy, HS Secretariat, hanif shah"
+        />
+      </Helmet>
       <section
         id="home"
         className="relative overflow-hidden p-4 bg-muted min-h-screen flex items-center justify-center"
