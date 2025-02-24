@@ -234,3 +234,14 @@
   transform: translate(-50%, -50%);
   transform-origin: left center;
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

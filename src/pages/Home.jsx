@@ -227,13 +227,13 @@ export default function Home() {
                 className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70"
                 asChild
               >
-                <Link to="mailto:hss@hss.com">
+                <Link to="mailto:smhanifshah@gmail.com">
                   <Mail className="mr-2 size-4" />
                   Email
                 </Link>
               </Button>
               <Button size="lg" variant="secondary" asChild>
-                <Link to="tel:+1234567890">
+                <Link to="tel:+923008505385">
                   <Phone className="mr-2 size-4" />
                   Call Us
                 </Link>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BackToTopButton } from ".";
+import { BackToTopButton, MrCard } from ".";
 
 export default function Footer() {
   return (
@@ -17,7 +17,8 @@ export default function Footer() {
             © 2024 HS Secretariat. All rights reserved.
           </p>
         </div>
-        <nav className="flex gap-4">
+        <MrCard />
+        {/* <nav className="flex gap-4">
           <Link
             href="#"
             className="text-xs font-medium text-muted-foreground hover:text-primary"
@@ -30,7 +31,7 @@ export default function Footer() {
           >
             Terms of Service
           </Link>
-        </nav>
+        </nav> */}
       </div>
       <BackToTopButton />
     </footer>
